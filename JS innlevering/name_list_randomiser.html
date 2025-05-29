@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name List Randomiser</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="palindrome_checker.html" class="nav-link">Palindrome Checker</a>
+        <a href="volume_converter.html" class="nav-link">Value Converter</a>
+        <a href="name_list_randomiser.html" class="nav-link">Name List Randomiser</a>
+    </nav>
+
+    <p class="h">Name List Randomiser</p>
+
+    <section>
+        <div id="nameInputs">
+            <button id="convert-button" onclick="createNameField()">Add Name</button>
+            <button id="convert-button" onclick="displayRandomizedNames()">Randomise</button>
+            <button id="convert-button" onclick="clearAll()">Clear All</button>
+        </div>
+        <div id="randomizedList" class="name-container">
+            <p>No names to display</p>
+        </div>
+    </section>
+
+    <div class="instructions">
+        <h2 class="use">How to use the name list randomiser?</h2>
+        <p class="instruction">• Add Names: Click "Add Name" to create input fields and type names.</p>
+        <p class="instruction">• Remove Names: Click "Remove" to delete a field</p>
+        <p class="instruction">• Randomise: Click "Randomise Names" to shuffle and display names.</p>
+        <p class="instruction">• Clear All: Click "Clear All" to reset everything.</p>  
+    </div>
+    
+    <script defer src="name_list_randomiser.js"></script>
+</body>
+</html>

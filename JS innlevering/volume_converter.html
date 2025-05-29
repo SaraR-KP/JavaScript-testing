@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Value Converter</title>
+  <link rel="stylesheet" href="CSS/index.css">
+  <script defer src="volume_converter.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="palindrome_checker.html" class="nav-link">Palindrome Checker</a>
+    <a href="volume_converter.html" class="nav-link">Value Converter</a>
+    <a href="name_list_randomiser.html" class="nav-link">Name List Randomiser</a>
+  </nav>
+
+  <div class="header">
+    <p class="h">Value Converter</p>
+  </div>
+
+  <div class="fra_og_til">
+    <div class="measurement">
+      <label for="measurement-in">Convert From</label>
+      <select id="measurement-in">
+        <option value="L">Liter (L)</option>
+        <option value="mL">Milliliter (mL)</option>
+        <option value="cup">Cups</option>
+        <option value="gal">Gallon (gal)</option>
+        <option value="oz">Ounce (oz)</option>
+        <option value="tbs">Tablespoon (tbs)</option>
+      </select>
+    </div>
+    <div class="measurement">
+      <label for="measurement-out">Convert To</label>
+      <select id="measurement-out">
+        <option value="L">Liter (L)</option>
+        <option value="mL">Milliliter (mL)</option>
+        <option value="cup">Cups</option>
+        <option value="gal">Gallon (gal)</option>
+        <option value="oz">Ounce (oz)</option>
+        <option value="tbs">Tablespoon (tbs)</option>
+      </select>
+    </div>
+    <div class="measurement">
+      <label for="input-value">Enter Value</label>
+      <input type="text" id="input-value" placeholder="Enter a number">
+    </div>
+    <div class="hover-button">
+      <button id="convert-button" type="button">Convert</button>
+    </div>
+    <div class="output">
+      <h2>Converted Value:</h2>
+      <p id="result">--</p>
+    </div>
+  </div>
+
+  <div class="instructions">
+    <h2 class="use">How to use the converter?</h2>
+    <p class="instruction">• Select the unit to convert from.</p>
+    <p class="instruction">• Choose the target unit.</p>
+    <p class="instruction">• Enter the value to convert and be sure to only write in numbers.</p>
+    <p class="instruction">• Press "Convert" to see the result.</p>
+  </div>
+</body>
+</html>
